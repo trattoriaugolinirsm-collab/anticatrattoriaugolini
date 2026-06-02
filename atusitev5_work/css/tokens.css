@@ -1,0 +1,87 @@
+/* =============================================================
+   Antica Trattoria Ugolini — Design tokens
+   ============================================================= */
+
+:root {
+  /* Brand primaries */
+  --c-verde-bosco:    #1d5632;
+  --c-cacao-antico:   #4c3332;
+  --c-terracotta:     #aa3e17;
+  --c-ocra-calda:     #f2c84d;
+
+  /* Paper surfaces */
+  --c-crema-sfoglia:  #e8d4b4;
+  --c-lino-chiaro:    #f6e9d8;
+
+  /* Neutrals */
+  --c-nero-inchiostro:#131313;
+  --c-bianco-puro:    #ffffff;
+
+  /* Tinted neutrals */
+  --c-cacao-90: #5a3f3e;
+  --c-cacao-60: #8d7574;
+  --c-cacao-30: #c8bab9;
+  --c-cacao-10: #ece4e3;
+  --c-verde-90: #2a6741;
+  --c-verde-30: #a8c1b0;
+  --c-verde-10: #dde7e0;
+  --c-lino-deep: #ecdec6;
+  --c-lino-shadow: #d8c4a8;
+
+  /* Semantic */
+  --bg-page:        var(--c-lino-chiaro);
+  --bg-surface:     var(--c-bianco-puro);
+  --bg-surface-2:   var(--c-crema-sfoglia);
+  --bg-inverse:     var(--c-cacao-antico);
+  --bg-brand:       var(--c-verde-bosco);
+  --fg-default:     var(--c-nero-inchiostro);
+  --fg-muted:       var(--c-cacao-antico);
+  --fg-subtle:      var(--c-cacao-60);
+  --fg-on-brand:    var(--c-lino-chiaro);
+  --fg-on-inverse:  var(--c-lino-chiaro);
+  --fg-link:        var(--c-verde-bosco);
+  --fg-accent:      var(--c-terracotta);
+  --border-default: rgba(76, 51, 50, 0.18);
+  --border-strong:  rgba(76, 51, 50, 0.35);
+  --border-brand:   var(--c-verde-bosco);
+
+  /* Type */
+  --font-display:   "DM Serif Display", "Cormorant Garamond", "Times New Roman", serif;
+  --font-body:      "Crimson Pro", "Cormorant Garamond", Georgia, serif;
+  --font-script:    "Leckerli One", "Brush Script MT", cursive;
+
+  /* Spacing scale (4px base) */
+  --s-1:  4px;
+  --s-2:  8px;
+  --s-3:  12px;
+  --s-4:  16px;
+  --s-5:  24px;
+  --s-6:  32px;
+  --s-7:  48px;
+  --s-8:  64px;
+  --s-9:  96px;
+  --s-10: 128px;
+
+  /* Radii */
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 14px;
+  --r-xl: 22px;
+  --r-pill: 999px;
+
+  /* Shadows (paper-like) */
+  --shadow-paper-sm: 0 1px 0 rgba(76,51,50,0.06), 0 2px 8px rgba(76,51,50,0.06);
+  --shadow-paper-md: 0 1px 0 rgba(76,51,50,0.08), 0 6px 18px rgba(76,51,50,0.10);
+  --shadow-paper-lg: 0 2px 0 rgba(76,51,50,0.10), 0 18px 40px -10px rgba(76,51,50,0.18);
+  --shadow-inset-paper: inset 0 0 0 1px rgba(76,51,50,0.08);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+
+  /* Subtle paper texture */
+  --tex-paper: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240' viewBox='0 0 240 240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.30  0 0 0 0 0.20  0 0 0 0 0.19  0 0 0 0.06 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+}

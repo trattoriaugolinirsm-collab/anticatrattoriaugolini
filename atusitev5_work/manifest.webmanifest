@@ -1,0 +1,21 @@
+{
+  "name": "Antica Trattoria Ugolini",
+  "short_name": "Ugolini",
+  "description": "Trattoria sammarinese dal 1960. Ricette di famiglia, ingredienti del territorio.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#f6e9d8",
+  "theme_color": "#1d5632",
+  "lang": "it",
+  "orientation": "portrait",
+  "categories": ["food", "restaurant"],
+  "icons": [
+    { "src": "assets/atu-logo.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "assets/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "shortcuts": [
+    { "name": "Menu", "url": "/menu.html" },
+    { "name": "Chiama", "url": "tel:+390549875837" }
+  ]
+}

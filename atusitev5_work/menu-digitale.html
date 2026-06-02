@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#4c3332" />
+<title>Menu digitale — Antica Trattoria Ugolini</title>
+<meta name="description" content="Menu digitale phone-first di Antica Trattoria Ugolini, scansiona il QR a tavola per consultare il menu completo." />
+<meta name="robots" content="noindex" />
+<link rel="icon" type="image/svg+xml" href="assets/atu-logo.svg" />
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+
+<link rel="preload" href="fonts/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0g.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="css/fonts.css" />
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/digital-menu.css" />
+</head>
+<body class="dm-body">
+<svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2l2.7 6.9 7.3.6-5.55 4.83 1.7 7.17L12 18.27 5.85 21.5l1.7-7.17L2 9.5l7.3-.6L12 2z"/></symbol>
+</svg>
+
+<div class="dm-screen">
+  <div class="dm-scroll">
+    <!-- Hero -->
+    <div class="dm-hero">
+      <div class="dm-hero__inner">
+        <span class="dm-hero__logo" data-logo="assets/atu-logo-mono-dal1960.svg" aria-label="Antica Trattoria Ugolini, dal 1960"></span>
+        <p class="dm-hero__welcome">benvenuti a tavola</p>
+        <p class="dm-hero__sub">Una cucina di territorio, di memoria e di sostanza</p>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="dm-tabs" role="tablist" aria-label="Sezioni del menu">
+      <button class="dm-tab" role="tab" data-tab="pranzo">Pranzo</button>
+      <button class="dm-tab" role="tab" data-tab="fissi">Menù fissi</button>
+      <button class="dm-tab" role="tab" data-tab="antipasti" aria-selected="true">Antipasti</button>
+      <button class="dm-tab" role="tab" data-tab="primi">Primi</button>
+      <button class="dm-tab" role="tab" data-tab="secondi">Secondi</button>
+      <button class="dm-tab" role="tab" data-tab="leggeri">Leggeri</button>
+      <button class="dm-tab" role="tab" data-tab="contorni">Contorni</button>
+      <button class="dm-tab" role="tab" data-tab="dolci">Dolci</button>
+      <button class="dm-tab" role="tab" data-tab="bevande">Bevande</button>
+      <button class="dm-tab" role="tab" data-tab="vini">Vini</button>
+    </div>
+
+    <div class="dm-list">
+
+      <!-- PRANZO -->
+      <div class="dm-panel" data-panel="pranzo" hidden>
+        <p class="dm-section-aside">A pranzo, come una volta</p>
+        <img class="dm-ornament" src="assets/divisor.png" alt="" loading="lazy" />
+        <h2 class="dm-section-title">Menù del pranzo</h2>
+        <p class="dm-formula-sub">Tre formule fatte in casa. Acqua e caffè inclusi.</p>
+        <p class="dm-formula-note">Coperto incluso</p>
+        <article class="dm-formula">
+          <header class="dm-formula__head"><span class="dm-formula__name">Formula 1</span><span class="dm-formula__price">€ 13</span></header>
+          <ul class="dm-formula__items"><li>Primo a scelta</li><li>Contorno</li><li>Acqua e caffè</li></ul>
+        </article>
+        <article class="dm-formula">
+          <header class="dm-formula__head"><span class="dm-formula__name">Formula 2</span><span class="dm-formula__price">€ 14</span></header>
+          <ul class="dm-formula__items"><li>Secondo a scelta</li><li>Contorno</li><li>Acqua e caffè</li></ul>
+        </article>
+        <article class="dm-formula">
+          <header class="dm-formula__head"><span class="dm-formula__name">Piatto Unico</span><span class="dm-formula__price">€ 15</span></header>
+          <ul class="dm-formula__items"><li>Primo e secondo</li><li>Contorno</li><li>Acqua e caffè</li></ul>
+        </article>
+
+        <p class="dm-section-aside" style="margin-top: 28px;">Componi il tuo piatto</p>
+        <article class="dm-formula">
+          <header class="dm-formula__head"><span class="dm-formula__name">Primi a scelta</span></header>
+          <ul class="dm-formula__items">
+            <li><strong>Pasta:</strong> gnocchi fatti in casa, paccheri o spaghetti artigianali</li>
+            <li><strong>Condimento:</strong> pomodoro, salsiccia e piselli o ragù della casa</li>
+          </ul>
+        </article>
+        <article class="dm-formula">
+          <header class="dm-formula__head"><span class="dm-formula__name">Secondi e contorni</span></header>
+          <ul class="dm-formula__items">
+            <li><strong>Secondi:</strong> petto di pollo, roast beef, salsiccia</li>
+            <li><strong>Contorni:</strong> verdure al gratè, insalata mista, patate al forno, erbette di campo</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- MENU FISSI (sera) -->
+      <div class="dm-panel" data-panel="fissi" hidden>
+        <p class="dm-section-aside">Ai pensem nun</p>
+        <img class="dm-ornament" src="assets/divisor.png" alt="" loading="lazy" />
+        <h2 class="dm-section-title">I nostri menù fissi</h2>
+        <p class="dm-formula-sub">Tre formule per la sera, dolce a scelta dal carrello.</p>
+        <p class="dm-formula-note">Bevande e coperto esclusi · Coperto € 2,50</p>
+        <article class="dm-formula">
+          <header class="dm-formula__head"><span class="dm-formula__name">Menù «Sottomontana»</span><span class="dm-formula__price">€ 25</span></header>
+          <ul class="dm-formula__items">
+            <li>Tagliere 1960</li>
+            <li>Grigliata mista romagnola <em>o</em> Pollo alla cacciatora</li>
+            <li>Patate al forno</li>
+            <li>Dolce a scelta dal carrello</li>
+          </ul>
+        </article>
+        <article class="dm-formula">
+          <header class="dm-formula__head"><span class="dm-formula__name">Menù del Ciclista</span><span class="dm-formula__price">€ 27</span></header>
+          <ul class="dm-formula__items">
+            <li>Tagliatelle al ragù <em>o</em> Strozzapreti salsiccia e piselli</li>
+            <li>Grigliata mista romagnola <em>o</em> Pollo alla cacciatora</li>
+            <li>Patate al forno</li>
+            <li>Dolce a scelta dal carrello</li>
+          </ul>
+        </article>
+        <article class="dm-formula">
+          <header class="dm-formula__head"><span class="dm-formula__name">Menù Degustazione</span><span class="dm-formula__price">€ 35</span></header>
+          <ul class="dm-formula__items">
+            <li>Antipasto di Gudanzon</li>
+            <li>Tagliatelle al ragù <em>o</em> Strozzapreti salsiccia e piselli</li>
+            <li>Grigliata mista romagnola <em>o</em> Pollo alla cacciatora</li>
+            <li>Patate al forno</li>
+            <li>Dolce a scelta dal carrello</li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- ANTIPASTI -->
+      <div class="dm-panel" data-panel="antipasti" hidden>
+        <p class="dm-section-aside">Met da seda, c'acmanzem</p>
+        <img class="dm-ornament" src="assets/divisor.png" alt="" loading="lazy" />
+        <h2 class="dm-section-title">Antipasti</h2>
+        <button class="dm-row" type="button"
+          data-name="Gran Tagliere Ugolini" data-price="€ 12 cad." data-note="min. 2 persone — specialità"
+          data-desc="Selezione di salumi e formaggi del territorio, confettura artigianale, giardiniera della casa, crema di ceci al rosmarino, gnocco fritto e piadina calda.">
+          <div class="dm-row__head"><span class="dm-row__name">Gran Tagliere Ugolini <span class="dm-row__note">min. 2 persone</span><span class="dm-row__star" aria-label="Specialità"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><span class="dm-row__star-label">specialità</span></span></span><span class="dm-row__price">€ 12 cad.</span></div>
+          <span class="dm-row__desc">Selezione di salumi e formaggi del territorio, confettura artigianale, giardiniera, crema di ceci al rosmarino, gnocco fritto e piadina.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Antipasto di Gudanzon" data-price="€ 14"
+          data-desc="Selezione abbondante di salumi e formaggi locali con confettura artigianale e piadina calda.">
+          <div class="dm-row__head"><span class="dm-row__name">Antipasto di Gudanzon</span><span class="dm-row__price">€ 14</span></div>
+          <span class="dm-row__desc">Selezione abbondante di salumi e formaggi locali con confettura e piadina calda.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Tagliere 1960" data-price="€ 11"
+          data-desc="Selezione di salumi misti accompagnati da piadina calda.">
+          <div class="dm-row__head"><span class="dm-row__name">Tagliere 1960</span><span class="dm-row__price">€ 11</span></div>
+          <span class="dm-row__desc">Selezione di salumi misti con piadina calda.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Gnocco fritto e prosciutto crudo di Parma DOP" data-price="€ 7"
+          data-desc="Gnocco fritto caldo accompagnato da prosciutto crudo di Parma DOP.">
+          <div class="dm-row__head"><span class="dm-row__name">Gnocco fritto e prosciutto crudo di Parma DOP</span><span class="dm-row__price">€ 7</span></div>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Uovo 64° al tartufo" data-price="€ 13"
+          data-desc="Cottura a bassa temperatura, con fonduta di formaggio DOP e scaglie di tartufo pregiato.">
+          <div class="dm-row__head"><span class="dm-row__name">Uovo 64° al tartufo</span><span class="dm-row__price">€ 13</span></div>
+          <span class="dm-row__desc">Cottura a bassa temperatura, con fonduta di formaggio DOP e scaglie di tartufo pregiato.</span>
+        </button>
+      </div>
+
+      <!-- PRIMI -->
+      <div class="dm-panel" data-panel="primi" hidden>
+        <p class="dm-section-aside">Fet in chesa, cumè una volta</p>
+        <img class="dm-ornament" src="assets/divisor.png" alt="" loading="lazy" />
+        <h2 class="dm-section-title">Primi della tradizione</h2>
+        <button class="dm-row" type="button"
+          data-name="Tagliatelle al ragù di carne selezionata" data-price="€ 12" data-note="specialità"
+          data-desc="Il nostro cavallo di battaglia, con ragù cotto lentamente."
+          data-provenance="Pasta con farina sammarinese.">
+          <div class="dm-row__head"><span class="dm-row__name">Tagliatelle al ragù di carne selezionata <span class="dm-row__star" aria-label="Specialità"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><span class="dm-row__star-label">specialità</span></span></span><span class="dm-row__price">€ 12</span></div>
+          <span class="dm-row__desc">Il nostro cavallo di battaglia, con ragù cotto lentamente.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Passatelli dorati, fonduta di formaggio DOP e tartufo" data-price="€ 14"
+          data-desc="Asciutti, con formaggio DOP e tartufo fresco.">
+          <div class="dm-row__head"><span class="dm-row__name">Passatelli dorati, fonduta di formaggio DOP e tartufo</span><span class="dm-row__price">€ 14</span></div>
+          <span class="dm-row__desc">Asciutti, con formaggio DOP e tartufo fresco.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Strozzapreti artigianali con salsiccia e piselli" data-price="€ 11"
+          data-desc="Salsiccia, piselli freschi di stagione, mantecato in padella."
+          data-provenance="Pasta con farina sammarinese.">
+          <div class="dm-row__head"><span class="dm-row__name">Strozzapreti artigianali con salsiccia e piselli</span><span class="dm-row__price">€ 11</span></div>
+          <span class="dm-row__desc">Salsiccia, piselli freschi di stagione, mantecato in padella.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Pappardelle del bosco" data-price="€ 13"
+          data-desc="Con ragù di cinghiale in punta di coltello."
+          data-provenance="Pasta con farina sammarinese.">
+          <div class="dm-row__head"><span class="dm-row__name">Pappardelle del bosco</span><span class="dm-row__price">€ 13</span></div>
+          <span class="dm-row__desc">Con ragù di cinghiale in punta di coltello.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Ravioli di Faustina" data-price="€ 14"
+          data-desc="Con cuore morbido di ricotta, accompagnato da porcini, guanciale e pomodorini."
+          data-provenance="Pasta con farina sammarinese.">
+          <div class="dm-row__head"><span class="dm-row__name">Ravioli di Faustina</span><span class="dm-row__price">€ 14</span></div>
+          <span class="dm-row__desc">Con cuore morbido di ricotta, accompagnato da porcini, guanciale e pomodorini.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Bis della tradizione" data-price="€ 15"
+          data-desc="Selezione di bis di primi a scelta della tradizione.">
+          <div class="dm-row__head"><span class="dm-row__name">Bis della tradizione</span><span class="dm-row__price">€ 15</span></div>
+          <span class="dm-row__desc">Selezione di bis di primi a scelta della tradizione.</span>
+        </button>
+      </div>
+
+      <!-- SECONDI -->
+      <div class="dm-panel" data-panel="secondi" hidden>
+        <p class="dm-section-aside">Ancora la nè fnida</p>
+        <img class="dm-ornament" src="assets/divisor.png" alt="" loading="lazy" />
+        <h2 class="dm-section-title">Secondi piatti</h2>
+        <button class="dm-row" type="button"
+          data-name="Grigliata mista Romagnola" data-price="€ 14"
+          data-desc="I nostri migliori tagli alla brace con salsiccia, costine, pancetta e castrato, accompagnata da piadina calda.">
+          <div class="dm-row__head"><span class="dm-row__name">Grigliata mista Romagnola</span><span class="dm-row__price">€ 14</span></div>
+          <span class="dm-row__desc">I nostri migliori tagli alla brace con salsiccia, costine, pancetta e castrato. Servita con piadina calda.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Pollo alla cacciatora" data-price="€ 13" data-note="specialità"
+          data-desc="Pollo brasato con pomodoro, olive e rosmarino, servito con patate al forno.">
+          <div class="dm-row__head"><span class="dm-row__name">Pollo alla cacciatora <span class="dm-row__star" aria-label="Specialità"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><span class="dm-row__star-label">specialità</span></span></span><span class="dm-row__price">€ 13</span></div>
+          <span class="dm-row__desc">Pollo brasato con pomodoro, olive e rosmarino. Servito con patate al forno.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Coniglio in porchetta della tradizione" data-price="€ 14"
+          data-desc="Cotto lentamente al forno, accompagnato con finocchio selvatico e il suo fondo.">
+          <div class="dm-row__head"><span class="dm-row__name">Coniglio in porchetta della tradizione</span><span class="dm-row__price">€ 14</span></div>
+          <span class="dm-row__desc">Cotto lentamente al forno, accompagnato con finocchio selvatico e il suo fondo.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Filetto di maiale bardato" data-price="€ 15"
+          data-desc="Cotto al rosa, avvolto da pancetta con riduzione al Sangiovese e patate al forno.">
+          <div class="dm-row__head"><span class="dm-row__name">Filetto di maiale bardato</span><span class="dm-row__price">€ 15</span></div>
+          <span class="dm-row__desc">Cotto al rosa, avvolto da pancetta con riduzione al Sangiovese e patate al forno.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Tagliata di manzo degli Allevatori Sammarinesi" data-price="€ 25" data-note="specialità"
+          data-desc="Taglio pregiato con sale grosso di Cervia e rosmarino dell'orto."
+          data-provenance="Abbiamo scelto quella degli allevatori sammarinesi perché è davvero buona — e perché ci piace portare in tavola il nostro territorio, non solo raccontarlo.">
+          <div class="dm-row__head"><span class="dm-row__name">Tagliata di manzo degli Allevatori Sammarinesi <span class="dm-row__star" aria-label="Specialità"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><use href="#i-star"/></svg><span class="dm-row__star-label">specialità</span></span></span><span class="dm-row__price">€ 25</span></div>
+          <span class="dm-row__desc">Taglio pregiato con sale grosso di Cervia e rosmarino dell'orto.</span>
+          <span class="dm-row__provenance">Allevatori sammarinesi — il nostro territorio in tavola.</span>
+        </button>
+      </div>
+
+      <!-- LEGGERI -->
+      <div class="dm-panel" data-panel="leggeri" hidden>
+        <p class="dm-section-aside">Per chi svo tni ligir o l'ha al su rasoun</p>
+        <img class="dm-ornament" src="assets/divisor.png" alt="" loading="lazy" />
+        <h2 class="dm-section-title">Piatti leggeri</h2>
+        <button class="dm-row" type="button"
+          data-name="Hummus di ceci" data-price="€ 9"
+          data-desc="Con verdure di stagione e piadina calda.">
+          <div class="dm-row__head"><span class="dm-row__name">Hummus di ceci</span><span class="dm-row__price">€ 9</span></div>
+          <span class="dm-row__desc">Con verdure di stagione e piadina calda.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Burger di quinoa e verdure" data-price="€ 13"
+          data-desc="Burger vegetale fatto in casa con quinoa, lenticchie e verdure, accompagnato da insalata mista.">
+          <div class="dm-row__head"><span class="dm-row__name">Burger di quinoa e verdure</span><span class="dm-row__price">€ 13</span></div>
+          <span class="dm-row__desc">Burger vegetale fatto in casa con quinoa, lenticchie e verdure, accompagnato da insalata mista.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Insalata del Cortile" data-price="€ 11"
+          data-desc="Insalata mista, pollo grigliato, uovo sodo, pomodorini, carote, mais e salsa yogurt al limone.">
+          <div class="dm-row__head"><span class="dm-row__name">Insalata del Cortile</span><span class="dm-row__price">€ 11</span></div>
+          <span class="dm-row__desc">Insalata mista, pollo grigliato, uovo sodo, pomodorini, carote, mais e salsa yogurt al limone.</span>
+        </button>
+        <button class="dm-row" type="button"
+          data-name="Insalata dello Sportivo" data-price="€ 11"
+          data-desc="Insalata mista, tonno, mozzarelline, pomodorini, olive, mais.">
+          <div class="dm-row__head"><span class="dm-row__name">Insalata dello Sportivo</span><span class="dm-row__price">€ 11</span></div>
+          <span class="dm-row__desc">Insalata mista, tonno, mozzarelline, pomodorini, olive, mais.</span>
+        </button>
+      </div>
+
+      <!-- CONTORNI -->
+      <div class="dm-panel" data-panel="contorni" hidden>
+        <p class="dm-section-aside">Per decurè e piat</p>
+        <img class="dm-ornament" src="assets/divisor.png" alt="" loading="lazy" />
+        <h2 class="dm-section-title">Contorni</h2>
+        <button class="dm-row" type="button" data-name="Patate al forno al rosmarino" data-price="€ 5" data-desc="Tagliate a spicchi, cotte al forno con rosmarino.">
+          <div class="dm-row__head"><span class="dm-row__name">Patate al forno al rosmarino</span><span class="dm-row__price">€ 5</span></div>
+        </button>
+        <button class="dm-row" type="button" data-name="Verdure gratinate" data-price="€ 6" data-desc="Verdure di stagione gratinate con pangrattato, erbe e olio EVO.">
+          <div class="dm-row__head"><span class="dm-row__name">Verdure gratinate</span><span class="dm-row__price">€ 6</span></div>
+        </button>
+        <button class="dm-row" type="button" data-name="Insalata mista" data-price="€ 5" data-desc="Insalata, pomodorini, carote, olio EVO.">
+          <div class="dm-row__head"><span class="dm-row__name">Insalata mista</span><span class="dm-row__price">€ 5</span></div>
+        </button>
+        <button class="dm-row" type="button" data-name="Erbette di campo saltate" data-price="€ 5" data-desc="Tarassaco, ortica, bietola, cotte in padella con aglio.">
+          <div class="dm-row__head"><span class="dm-row__name">Erbette di campo saltate</span><span class="dm-row__price">€ 5</span></div>
+        </button>
+      </div>
+
+      <!-- DOLCI -->
+      <div class="dm-panel" data-panel="dolci" hidden>
+        <p class="dm-section-aside">Se u tarvenza ancora e post</p>
+        <img class="dm-ornament" src="assets/divisor.png" alt="" loading="lazy" />
+        <h2 class="dm-section-title">Dolci</h2>
+        <button class="dm-row" type="button"
+          data-name="I dolci al carrello" data-price="€ 5,50 cad."
+          data-desc="Una selezione di dolci da credenza e al cucchiaio, presentata al tavolo. Scegliete a vista.">
+          <div class="dm-row__head"><span class="dm-row__name">I dolci al carrello</span><span class="dm-row__price">€ 5,50 cad.</span></div>
+          <span class="dm-row__desc">Una selezione presentata al tavolo. Scegliete a vista.</span>
+        </button>
+      </div>
+
+      <!-- BEVANDE -->
+      <div class="dm-panel" data-panel="bevande" hidden>
+        <p class="dm-section-aside">Cus'è cus be?</p>
+        <img class="dm-ornament" src="assets/divisor.png" alt="" loading="lazy" />
+        <h2 class="dm-section-title">Bevande</h2>
+        <button class="dm-row" type="button" data-name='Acqua "La Chiara"' data-price="€ 2,50" data-desc="Naturale o frizzante.">
+          <div class="dm-row__head"><span class="dm-row__name">Acqua "La Chiara"</span><span class="dm-row__price">€ 2,50</span></div>
+          <span class="dm-row__desc">Naturale o frizzante.</span>
+        </button>
+        <button class="dm-row" type="button" data-name="Birra artigianale di San Marino 33cl" data-price="€ 6" data-desc="Birra artigianale del territorio.">
+          <div class="dm-row__head"><span class="dm-row__name">Birra artigianale di San Marino 33cl</span><span class="dm-row__price">€ 6</span></div>
+        </button>
+        <button class="dm-row" type="button" data-name="Bibite" data-price="€ 3,50" data-desc="Coca-Cola, aranciata, gassose.">
+          <div class="dm-row__head"><span class="dm-row__name">Bibite</span><span class="dm-row__price">€ 3,50</span></div>
+          <span class="dm-row__desc">Coca-Cola, aranciata, gassose.</span>
+        </button>
+        <button class="dm-row" type="button" data-name="Caffè" data-price="€ 2" data-desc="Espresso.">
+          <div class="dm-row__head"><span class="dm-row__name">Caffè</span><span class="dm-row__price">€ 2</span></div>
+        </button>
+        <button class="dm-row" type="button" data-name="Caffè corretto" data-price="€ 2,50" data-desc="Espresso con grappa o sambuca.">
+          <div class="dm-row__head"><span class="dm-row__name">Caffè corretto</span><span class="dm-row__price">€ 2,50</span></div>
+        </button>
+        <button class="dm-row" type="button" data-name="Amari e liquori" data-price="€ 5" data-desc="Selezione di amari e liquori della casa.">
+          <div class="dm-row__head"><span class="dm-row__name">Amari e liquori</span><span class="dm-row__price">€ 5</span></div>
+        </button>
+      </div>
+
+      <!-- VINI -->
+      <div class="dm-panel" data-panel="vini" hidden>
+        <p class="dm-section-aside">L'aqua la fa la rusna</p>
+        <img class="dm-ornament" src="assets/divisor.png" alt="" loading="lazy" />
+        <h2 class="dm-section-title">Carta dei vini</h2>
+        <p class="dm-formula-sub">Vini del territorio sammarinese, per accompagnare la cucina di casa.</p>
+
+        <div class="dm-wine-head"><span>Calice</span><span>Bottiglia</span></div>
+
+        <p class="dm-wine-group">Rossi</p>
+        <div class="dm-wine"><span class="dm-wine__name">Valdragone Rosso</span><span class="dm-wine__c">€ 4</span><span class="dm-wine__b">€ 14</span></div>
+        <div class="dm-wine"><span class="dm-wine__name">Sangiovese di San Marino</span><span class="dm-wine__c">€ 4,50</span><span class="dm-wine__b">€ 16</span></div>
+        <div class="dm-wine"><span class="dm-wine__name">Brugneto di San Marino</span><span class="dm-wine__c">—</span><span class="dm-wine__b">€ 22</span></div>
+        <div class="dm-wine"><span class="dm-wine__name">Sterpeto Riserva 2020</span><span class="dm-wine__c">—</span><span class="dm-wine__b">€ 35</span></div>
+
+        <p class="dm-wine-group">Bianchi</p>
+        <div class="dm-wine"><span class="dm-wine__name">Valdragone Bianco</span><span class="dm-wine__c">€ 4</span><span class="dm-wine__b">€ 14</span></div>
+        <div class="dm-wine"><span class="dm-wine__name">Biancale di San Marino</span><span class="dm-wine__c">€ 4,50</span><span class="dm-wine__b">€ 18</span></div>
+        <div class="dm-wine"><span class="dm-wine__name">Roncale di San Marino</span><span class="dm-wine__c">—</span><span class="dm-wine__b">€ 19</span></div>
+        <div class="dm-wine"><span class="dm-wine__name">Ribolla di San Marino</span><span class="dm-wine__c">—</span><span class="dm-wine__b">€ 27</span></div>
+        <div class="dm-wine"><span class="dm-wine__name">Caldese Chardonnay Riserva</span><span class="dm-wine__c">—</span><span class="dm-wine__b">€ 34</span></div>
+
+        <p class="dm-wine-group">Bollicine</p>
+        <div class="dm-wine"><span class="dm-wine__name">Valdragone Frizzante</span><span class="dm-wine__c">€ 4</span><span class="dm-wine__b">€ 14</span></div>
+        <div class="dm-wine"><span class="dm-wine__name">Riserva del Titano Brut</span><span class="dm-wine__c">—</span><span class="dm-wine__b">€ 22</span></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom bar: brand touchpoints, not table service -->
+  <div class="dm-bottom">
+    <a class="dm-btn dm-btn--ghost" href="https://www.instagram.com/anticatrattoriaugolini" rel="noopener" target="_blank">Seguici</a>
+    <a class="dm-btn dm-btn--primary" href="tel:+390549875837">Chiama per prenotare</a>
+  </div>
+</div>
+
+<!-- Detail sheet -->
+<div class="dm-veil" aria-hidden="true"></div>
+<div class="dm-sheet" role="dialog" aria-modal="true" aria-labelledby="dm-sheet-title">
+  <button class="dm-sheet__close" type="button" aria-label="Chiudi">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M6 18L18 6"/></svg>
+  </button>
+  <div class="dm-sheet__grab" aria-hidden="true"></div>
+  <p class="dm-sheet__eyebrow">dal menu</p>
+  <div class="dm-sheet__head">
+    <h2 class="dm-sheet__title" id="dm-sheet-title"></h2>
+    <span class="dm-sheet__price"></span>
+  </div>
+  <p class="dm-sheet__desc"></p>
+  <div class="dm-sheet__provenance" hidden>
+    <div class="dm-sheet__label">Materie prime</div>
+    <span class="dm-sheet__provenance-text"></span>
+  </div>
+  <div class="dm-sheet__pair" hidden>
+    <div class="dm-sheet__label">In abbinamento</div>
+    <em class="dm-sheet__pair-text"></em>
+  </div>
+</div>
+
+<style>
+  .visually-hidden {
+    position: absolute;
+    width: 1px; height: 1px;
+    padding: 0; margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  .dm-hero__logo svg path { fill: currentColor !important; }
+  .dm-hero__logo svg { width: 100%; height: auto; display: block; }
+</style>
+
+<script src="js/site.js" defer></script>
+<script src="js/digital-menu.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+# Netlify _redirects — handle clean URLs and 404
+# Tries pretty paths first, then falls through.
+
+/menu        /menu.html        200
+/storia      /storia.html      200
+/prenota     /prenota.html     200
+/contatti    /contatti.html    200
+/menu-digitale /menu-digitale.html 200
+
+# 404 fallback (Netlify uses 404.html by default; this is explicit)
+/*  /404.html  404

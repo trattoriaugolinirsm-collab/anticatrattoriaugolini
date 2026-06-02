@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /menu-digitale.html
+Disallow: /project/
+Disallow: /chats/
+
+Sitemap: https://anticatrattoriaugolini.com/sitemap.xml
