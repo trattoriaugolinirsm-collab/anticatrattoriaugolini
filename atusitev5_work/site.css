@@ -1227,15 +1227,16 @@ figure.photo--bw .photo-frame img { filter: grayscale(1) contrast(1.02); }
 .story-figure .photo-frame { aspect-ratio: 3 / 2; }
 .story-figure--float-right {
   float: right;
-  width: 42%;
-  margin: 6px 0 var(--s-5) var(--s-6);
+  width: min(42%, 420px);
+  margin: 6px 0 var(--s-6) clamp(32px, 4vw, 56px);
 }
 .story-figure--float-left {
   float: left;
-  width: 42%;
-  margin: 6px var(--s-6) var(--s-5) 0;
+  width: min(42%, 420px);
+  margin: 6px clamp(32px, 4vw, 56px) var(--s-6) 0;
 }
-.story-figure--generations .photo-frame img { object-position: center bottom; }
+.story-figure--generations .photo-frame img { object-position: center 30%; }
+.story-pull { clear: both; }
 @media (max-width: 680px) {
   .story-figure--float-right, .story-figure--float-left { float: none; width: 100%; margin: var(--s-6) 0; }
 }
