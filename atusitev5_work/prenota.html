@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prenotazioni telefoniche — Antica Trattoria Ugolini</title>
-<meta name="description" content="Prenota telefonicamente un tavolo all'Antica Trattoria Ugolini di Borgo Maggiore, San Marino. Chiama 0549 875837. Aperto da martedì a domenica, 10:00-23:00." />
+<meta name="description" content="Prenota telefonicamente un tavolo all'Antica Trattoria Ugolini di Borgo Maggiore, San Marino. Chiama 0549 875837 o 335 733 6979. Orari: lunedì 12:00-15:00; martedì chiuso; mercoledì 19:00-22:30; da giovedì a domenica pranzo e cena." />
 <link rel="canonical" href="https://anticatrattoriaugolini.com/prenota.html" />
 <link rel="icon" type="image/svg+xml" href="assets/atu-logo.svg" />
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
@@ -15,14 +15,14 @@
 <meta property="og:locale" content="it_IT" />
 <meta property="og:site_name" content="Antica Trattoria Ugolini" />
 <meta property="og:title" content="Prenotazioni telefoniche — Antica Trattoria Ugolini" />
-<meta property="og:description" content="Per riservare un tavolo chiama 0549 875837. Borgo Maggiore, San Marino." />
+<meta property="og:description" content="Per riservare un tavolo chiama 0549 875837 o 335 733 6979. Borgo Maggiore, San Marino." />
 <meta property="og:url" content="https://anticatrattoriaugolini.com/prenota.html" />
 <meta property="og:image" content="https://anticatrattoriaugolini.com/assets/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Prenotazioni telefoniche — Antica Trattoria Ugolini" />
-<meta name="twitter:description" content="Chiama 0549 875837 per riservare un tavolo." />
+<meta name="twitter:description" content="Chiama 0549 875837 o 335 733 6979 per riservare un tavolo." />
 <meta name="twitter:image" content="https://anticatrattoriaugolini.com/assets/og-image.png" />
 
 <link rel="preload" href="fonts/-nFnOHM81r4j6k0gjAW3mujVU2B2G_Bx0g.woff2" as="font" type="font/woff2" crossorigin />
@@ -54,6 +54,14 @@
     text-decoration: none;
     margin: var(--s-4) 0 var(--s-5);
   }
+  .phone-booking__numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--s-2);
+    margin: var(--s-4) 0 var(--s-5);
+  }
+  .phone-booking__numbers .phone-booking__number { margin: 0; }
   .phone-booking__number:hover { color: var(--c-verde-90); }
   .phone-booking__copy {
     font-family: var(--font-body);
@@ -122,7 +130,7 @@
   "@id": "https://anticatrattoriaugolini.com/#restaurant",
   "name": "Antica Trattoria Ugolini",
   "url": "https://anticatrattoriaugolini.com/prenota.html",
-  "telephone": "+390549875837",
+  "telephone": ["+390549875837", "+393357336979"],
   "servesCuisine": ["Cucina romagnola", "Cucina sammarinese", "Pasta fatta in casa"],
   "acceptsReservations": true,
   "address": {
@@ -133,7 +141,10 @@
     "addressCountry": "SM"
   },
   "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "10:00", "closes": "23:00" }
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Monday", "opens": "12:00", "closes": "15:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Wednesday", "opens": "19:00", "closes": "22:30" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday","Friday","Saturday","Sunday"], "opens": "12:00", "closes": "15:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Thursday","Friday","Saturday","Sunday"], "opens": "19:00", "closes": "22:30" }
   ]
 }
 </script>
@@ -169,13 +180,17 @@
     <div class="container">
       <div class="phone-booking">
         <article class="phone-booking__main reveal">
-          <p class="section-eyebrow">numero diretto</p>
-          <a class="phone-booking__number" href="tel:+390549875837" aria-label="Chiama 0549 875837">0549 875837</a>
+          <p class="section-eyebrow">numeri diretti</p>
+          <div class="phone-booking__numbers">
+            <a class="phone-booking__number" href="tel:+390549875837" aria-label="Chiama 0549 875837">0549 875837</a>
+            <a class="phone-booking__number" href="tel:+393357336979" aria-label="Chiama 335 733 6979">335 733 6979</a>
+          </div>
           <p class="phone-booking__copy">
             Diteci giorno, orario, numero di persone e richieste particolari. Per gruppi, compleanni, allergie o tavoli numerosi, la telefonata è il modo più semplice per organizzarci bene.
           </p>
           <div class="phone-booking__actions">
-            <a class="btn btn-primary btn-lg" href="tel:+390549875837">Chiama ora</a>
+            <a class="btn btn-primary btn-lg" href="tel:+390549875837">Chiama 0549 875837</a>
+            <a class="btn btn-secondary btn-lg" href="tel:+393357336979">Chiama 335 733 6979</a>
             <a class="btn btn-secondary btn-lg" href="contatti.html">Vedi orari e indirizzo</a>
           </div>
         </article>
@@ -185,7 +200,7 @@
           <dl>
             <div>
               <dt>Orari</dt>
-              <dd>Aperti da martedì a domenica, 10:00-23:00. Lunedì chiuso.</dd>
+              <dd>Lunedì 12:00-15:00; martedì chiuso; mercoledì 19:00-22:30; da giovedì a domenica 12:00-15:00 e 19:00-22:30.</dd>
             </div>
             <div>
               <dt>Gruppi</dt>
@@ -209,9 +224,10 @@
       <p class="site-footer__tag">Trattoria di famiglia<br />Famiglia Ugolini, dal 1960</p>
     </div>
     <div><h5>Dove siamo</h5><p>Str. Sottomontana, 37<br />47893 Borgo Maggiore<br />Repubblica di San Marino</p></div>
-    <div><h5>Orari</h5><p>Mar - Dom<br />10:00 - 23:00<br /><em>Lunedì chiuso</em></p></div>
+    <div><h5>Orari</h5><p>Lun 12:00–15:00<br />Mar chiuso<br />Mer 19:00–22:30<br />Gio–Dom 12:00–15:00 / 19:00–22:30</p></div>
     <div><h5>Contatti</h5><p>
       <a href="tel:+390549875837">0549 875837</a><br />
+      <a href="tel:+393357336979">335 733 6979</a><br />
       <a href="mailto:trattoriaugolinirsm@gmail.com">trattoriaugolinirsm@gmail.com</a><br />
       <a href="https://www.instagram.com/anticatrattoriaugolini" rel="noopener">@anticatrattoriaugolini</a>
     </p></div>
