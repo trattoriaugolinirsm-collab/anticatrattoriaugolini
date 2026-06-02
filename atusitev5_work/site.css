@@ -43,7 +43,7 @@ a:hover { color: var(--c-verde-90); }
 }
 /* Shared rule below targets both header and footer logos via [data-logo] */
 
-.site-header__nav { display: flex; align-items: center; gap: var(--s-6); }
+.site-header__nav { display: flex; align-items: center; gap: clamp(14px, 1.8vw, 28px); }
 .site-header__nav a {
   font-family: var(--font-body);
   font-size: 15px;
@@ -71,6 +71,10 @@ a:hover { color: var(--c-verde-90); }
   color: #fff;
 }
 .site-header__nav a.btn-primary[aria-current="page"]::after { display: none; }
+.site-header__nav .site-header__call {
+  padding: 11px 16px;
+  font-size: 14px;
+}
 
 /* Mobile nav toggle */
 .nav-toggle {
@@ -638,6 +642,10 @@ a:hover { color: var(--c-verde-90); }
   .site-header__nav .btn {
     margin-top: var(--s-3);
     align-self: flex-start;
+  }
+  .site-header__nav .site-header__call {
+    justify-content: center;
+    width: 100%;
   }
 }
 
